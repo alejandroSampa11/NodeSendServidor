@@ -21,10 +21,10 @@ const opcionesCors = {
 app.use(cors(opcionesCors))
 
 //RUTAS DE LA APP
-app.use('/api/usuarios', usuariosRoutes)
-app.use('/api/auth', authRoutes)
-app.use('/api/enlaces', enlacesRoutes)
-app.use('/api/archivos', archivosRoutes)
+app.use('api/usuarios', usuariosRoutes)
+app.use('api/auth', authRoutes)
+app.use('api/enlaces', enlacesRoutes)
+app.use('api/archivos', archivosRoutes)
 
 //PUERTO DE LA APP
 const port = process.env.PORT || 4000;
