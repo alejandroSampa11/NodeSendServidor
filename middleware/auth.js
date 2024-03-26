@@ -10,7 +10,7 @@ const auth = (req, res, next) => {
             req.usuario = usuario
         } catch (error) {
             console.log(error)
-            console.log('JWT No Válido')
+            // console.log('JWT No Válido')
         }
     }
     return next()

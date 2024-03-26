@@ -75,7 +75,7 @@ const todosEnlaces = async(req, res)=>{
 //RETORNA SI EL ENLACE TIENE PASSWORD O NO
 const tienePassword = async (req, res,next)=>{
     const {url} = req.params
-    console.log(url)
+    // console.log(url)
     //VERIFICAR SI EXISTE EL ENLACE
     const enlace = await Enlace.findOne({url})
     if(!enlace){
